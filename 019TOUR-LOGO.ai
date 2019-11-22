@@ -1,0 +1,20 @@
+/* CORES PADRAO */
+$cor-bg: #fefef5;
+$cor-prim:#4c8a22;
+$cor-sec:#2d6109;
+
+/* FONTES PADRAO */
+
+$font-prim: Helvetica;
+$font-sec: ;
+
+/* MARGIM PADRAO */
+$margin-l: 100px;
+$margin-r: 100px;
+$margin-t: 100px;
+
+.wrapper{
+	width:1180px;
+	margin: 0 auto;
+	background-color: $cor-bg;
+}

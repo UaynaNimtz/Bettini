@@ -1,0 +1,309 @@
+@charset "utf-8";
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+/* CORES PADRAO */
+$cor-bg: #fefef5;
+$cor-prim:#145FF5;
+$cor-sec:#0500AD;
+$cor-terc: #181818;
+
+/* FONTES PADRAO */
+
+$font-prim: Open Sans;
+$font-size: 20px;
+
+/* MARGIM PADRAO */
+$margin-l: 100px;
+$margin-r: 100px;
+$margin-t: 100px;
+
+#cb{
+			color:$cor-sec;
+		}
+
+#id {
+	max-width: 100%;
+}
+.wrapper {
+	max-width: 1300px;
+	background-color: $cor-bg;
+}
+
+.menu {
+	max-height: 80px;
+	background-color: $cor-bg;
+	text-align: center;
+	word-spacing: 50px;
+	display: block;
+	padding-top: 10px;
+	position: fixed;
+	top:0;
+	width: 1300px;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		padding-right: 10px;
+		font-weight: 300;
+	}
+
+	a:hover{
+		color: $cor-sec;
+	}
+
+	h3 {
+		font-size: 15px;
+		display: inline-flex;
+		align-items:center;
+		color: $cor-terc;
+	}
+
+	.logo{
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+}
+
+.enunciado {
+		margin-top: 400px;
+		margin-left: 400px;
+		position: absolute;
+		text-align: center;
+		color: $cor-bg;
+		display: block;
+
+		h1 {
+			font-size: 150px;
+		}
+		h3 {
+			margin-top: -25px;
+			font-size: 17px;
+			font-weight: 300;
+			word-spacing: 4px;
+		}
+	}
+
+.banner{
+	overflow: hidden;
+	}
+
+.sobre{
+		margin-top: 50px;
+		.empresa h2{
+			font-weight: 100;
+			font-size: $font-size;
+			text-align: center;
+			line-height: 25px;
+		}
+		h2 b{
+			color:$cor-prim;
+		}
+
+		.mvv{
+			display: flex;
+			justify-content: center;
+			margin-top: 100px;
+			}
+
+			.missao{
+				margin-left: 30px;
+			}
+
+			.inf{
+				 justify-content: center;
+			}
+
+			.visao{
+				margin-left: 30px;
+			}
+
+			.valores{
+				margin-left: 30px;
+			}
+
+			img{
+				text-align: center;
+			}
+
+			.inf h2{
+				color: $cor-prim;
+			}
+
+			h2{
+				font-weight: 500;
+				text-align: center;
+				padding-left: 10px;
+			}
+
+			h3{
+				font-weight: 200;
+				font-size: $font-size;
+				text-align: center;
+			}
+}
+
+.trabalhamos{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+		h2{
+			color:$cor-prim;
+		}
+
+		h3{
+			font-weight: 100;
+			font-size: $font-size;
+		}
+
+		.meioambiente{
+			text-align: end;
+			margin-left: 35px;
+}
+
+		.segurancadotrab{
+			margin-left: 35px;
+		}
+}
+
+.nossosparceiros{
+	margin-top: 60px;
+
+	h2{
+		text-align: center;
+		color:$cor-prim;
+	}
+
+	.box-logos{
+		margin:auto;
+	}
+
+	.logo{
+		text-align: center;
+	}
+}
+
+.contato{
+	.formulario{
+
+		form {
+		    /* Apenas para centralizar o form na página */
+		    margin-left: 230px;
+		    margin-top: 30px;
+		    /* Para ver as bordas do formulário */
+		}
+
+		label {
+		    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+		    display: inline-block;
+		    width: 90px;
+		    text-align: left;
+		    color: $cor-sec;
+		}
+
+		input, textarea {
+		    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+		    font: 1em sans-serif;
+
+		    /* Para dar o mesmo tamanho a todos os campo de texto */
+		    width: 300px;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+
+		    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+		    border: 1px solid #999;
+		}
+
+		input:focus, textarea:focus {
+		    /* Dar um pouco de destaque nos elementos ativos */
+		    border-color: #000;
+		}
+
+		textarea {
+		    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+		    vertical-align: top;
+
+		    /* Para dar espaço suficiente para digitar algum texto */
+		    height: 5em;
+
+		    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+		    resize: vertical;
+		}
+
+		.button {
+		    /* Para posicionar os botões para a mesma posição dos campos de texto */
+		    padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+		    margin-top: 20px;
+		}
+		button {
+		    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+		    margin-left: .5em;
+		}
+	}
+}
+
+.faleconosco{
+	.email{
+		margin-top: -21px;
+	}
+
+	.local{
+		margin-top: -20px;
+	}
+
+	.telefone{
+		margin: 0;
+	}
+
+	.localizacao{
+		margin-top: -25px;
+	}
+
+	.whatsapp h3 {
+		font-size: 15px;
+		display: inline-flex;
+		align-items:center;
+		color:$cor-terc;
+		font-weight: 200;
+	}
+
+	.email h3 {
+		font-size: 15px;
+		display: inline-flex;
+		align-items:center;
+		color:$cor-terc;
+		font-weight: 200;
+	}
+
+	.local h3 {
+		font-size: 15px;
+		display: inline-flex;
+		align-items:center;
+		color:$cor-terc;
+		font-weight: 200;
+	}
+}
+
+.rodape{
+	margin-top: 30px;
+	img{
+		max-width: 100%;
+		width: 1265px;
+	}
+
+	h3{
+		color: $cor-bg;
+		margin-top: -55px;
+		font-size: 12px;
+		font-weight: 100;
+		margin-left: 110px;
+	}
+
+	.redesocial{
+		max-width: 4%;
+		margin-left: 1100px;
+		margin-top: -25px;
+		.face{
+			padding-right: 10px;
+		}
+	}
+}

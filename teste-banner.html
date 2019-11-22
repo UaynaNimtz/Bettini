@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+function slide1(){
+document.getElementById('id').src="Fotos/outdoor-4394374_1920.png";
+setTimeout("slide2()", 3000)
+document.getElementById('aId').href="link1.html"
+}
+
+function slide2(){
+document.getElementById('id').src="Fotos/environmental-protection-326923.jpg";
+setTimeout("slide3()", 3000)
+document.getElementById('aId').href="link2.html"
+}
+
+function slide3(){
+document.getElementById('id').src="Fotos/young-2428783.jpg";
+setTimeout("slide1()", 3000)
+document.getElementById('aId').href="link3.html"
+}
+</script>
+<body onLoad="slide1()">
+<a id="aId"><img id="id"></a>
+</body>
+</html>

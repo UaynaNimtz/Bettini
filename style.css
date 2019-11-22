@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+/* CORES PADRAO */
+/* FONTES PADRAO */
+/* MARGIM PADRAO */
+#cb {
+  color: #0500AD; }
+
+#id {
+  max-width: 100%; }
+
+.wrapper {
+  max-width: 1300px;
+  background-color: #fefef5; }
+
+.menu {
+  max-height: 80px;
+  background-color: #fefef5;
+  text-align: center;
+  word-spacing: 50px;
+  display: block;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 1300px; }
+  .menu a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 10px;
+    font-weight: 300; }
+  .menu a:hover {
+    color: #0500AD; }
+  .menu h3 {
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    color: #181818; }
+  .menu .logo {
+    margin-right: 30px;
+    margin-left: 30px; }
+
+.enunciado {
+  margin-top: 400px;
+  margin-left: 400px;
+  position: absolute;
+  text-align: center;
+  color: #fefef5;
+  display: block; }
+  .enunciado h1 {
+    font-size: 150px; }
+  .enunciado h3 {
+    margin-top: -25px;
+    font-size: 17px;
+    font-weight: 300;
+    word-spacing: 4px; }
+
+.banner {
+  overflow: hidden; }
+
+.sobre {
+  margin-top: 50px; }
+  .sobre .empresa h2 {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px; }
+  .sobre h2 b {
+    color: #145FF5; }
+  .sobre .mvv {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; }
+  .sobre .missao {
+    margin-left: 30px; }
+  .sobre .inf {
+    justify-content: center; }
+  .sobre .visao {
+    margin-left: 30px; }
+  .sobre .valores {
+    margin-left: 30px; }
+  .sobre img {
+    text-align: center; }
+  .sobre .inf h2 {
+    color: #145FF5; }
+  .sobre h2 {
+    font-weight: 500;
+    text-align: center;
+    padding-left: 10px; }
+  .sobre h3 {
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center; }
+
+.trabalhamos {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; }
+  .trabalhamos h2 {
+    color: #145FF5; }
+  .trabalhamos h3 {
+    font-weight: 100;
+    font-size: 20px; }
+  .trabalhamos .meioambiente {
+    text-align: end;
+    margin-left: 35px; }
+  .trabalhamos .segurancadotrab {
+    margin-left: 35px; }
+
+.nossosparceiros {
+  margin-top: 60px; }
+  .nossosparceiros h2 {
+    text-align: center;
+    color: #145FF5; }
+  .nossosparceiros .box-logos {
+    margin: auto; }
+  .nossosparceiros .logo {
+    text-align: center; }
+
+.contato .formulario form {
+  /* Apenas para centralizar o form na página */
+  margin-left: 230px;
+  margin-top: 30px;
+  /* Para ver as bordas do formulário */ }
+.contato .formulario label {
+  /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+  color: #0500AD; }
+.contato .formulario input, .contato .formulario textarea {
+  /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+  font: 1em sans-serif;
+  /* Para dar o mesmo tamanho a todos os campo de texto */
+  width: 300px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Para harmonizar o look & feel das bordas nos campos de texto*/
+  border: 1px solid #999; }
+.contato .formulario input:focus, .contato .formulario textarea:focus {
+  /* Dar um pouco de destaque nos elementos ativos */
+  border-color: #000; }
+.contato .formulario textarea {
+  /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+  vertical-align: top;
+  /* Para dar espaço suficiente para digitar algum texto */
+  height: 5em;
+  /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+  resize: vertical; }
+.contato .formulario .button {
+  /* Para posicionar os botões para a mesma posição dos campos de texto */
+  padding-left: 90px;
+  /* mesmo tamanho que os elementos do tipo label */
+  margin-top: 20px; }
+.contato .formulario button {
+  /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+  margin-left: .5em; }
+
+.faleconosco .email {
+  margin-top: -21px; }
+.faleconosco .local {
+  margin-top: -20px; }
+.faleconosco .telefone {
+  margin: 0; }
+.faleconosco .localizacao {
+  margin-top: -25px; }
+.faleconosco .whatsapp h3 {
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  color: #181818;
+  font-weight: 200; }
+.faleconosco .email h3 {
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  color: #181818;
+  font-weight: 200; }
+.faleconosco .local h3 {
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  color: #181818;
+  font-weight: 200; }
+
+.rodape {
+  margin-top: 30px; }
+  .rodape img {
+    max-width: 100%;
+    width: 1265px; }
+  .rodape h3 {
+    color: #fefef5;
+    margin-top: -55px;
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 110px; }
+  .rodape .redesocial {
+    max-width: 4%;
+    margin-left: 1100px;
+    margin-top: -25px; }
+    .rodape .redesocial .face {
+      padding-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */
